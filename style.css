@@ -1,9 +1,14 @@
 body {background-image: url("https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-23/shared-assets/images/2022/07/eacom-franchise-hub-f23-hero-med-xl-7x2.png.adapt.crop7x2.1920w.png");
      background-attachment: fixed;}
+
 div {display: flex;
-     margin-right: 10px;}
-.header {justify-content: space-between;}
-.nav {margin: 0.5rem}
+     }
+
+.wrapper{flex-direction: column;}
+
+.header {justify-content: space-between;
+flex-direction: row;}
+
 
 .spacer {height: 30vh;}
 
@@ -16,10 +21,24 @@ div {display: flex;
          height: 1cm;
          }
 .shop {
-       margin: 1rem;
-     flex-wrap: wrap;
-justify-content: center;
-gap: 10px;}
-.shop-item {flex-direction: column;
-     margin: 1rem;
-            }
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 10px;
+}
+
+.shop-item {
+     flex-direction: column;
+
+     padding: 10px;
+
+     @media (max-width: 400px) {
+          width: 40%;
+     }
+
+     @media (min-width: 400px) {
+          width: 15%;
+     }
+ }
+
+
