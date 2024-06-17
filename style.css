@@ -30,13 +30,13 @@ flex-direction: row;}
 .shop-item {
      flex-direction: column;
 
-     padding: 10px;
+     margin: 10px;
 
-     @media (max-width: 400px) {
+     @media (max-width: 415px) {
           width: 40%;
      }
 
-     @media (min-width: 400px) {
+     @media (min-width: 415px) {
           width: 15%;
      }
  }
